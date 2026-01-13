@@ -1,0 +1,61 @@
+// start .sTry
+.sTry {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+
+	&__bg-block {
+		box-shadow: 0 60px 113px 0 rgba(240, 243, 255, 0.89);
+		background: linear-gradient(134deg, #1c40d0 0%, #7300ff 100%);
+		background-image: url(../img/sTry-bg.jpg);
+		@include bgs;
+		background-position: left top;
+		color: #fff;
+		padding: 40px;
+		border-radius: 16px;
+		div {
+			max-width: 724px;
+		}
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	&__block {
+		padding: rem(40);
+		box-shadow: 0 60px 113px 0 rgba(240, 243, 255, 0.89);
+		background: linear-gradient(134deg, #fff 0%, #f6f8ff 100%);
+		border-radius: 16px;
+	}
+	&__text {
+		@include media-breakpoint-up(xl) {
+			max-width: rem(380);
+		}
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sTry
