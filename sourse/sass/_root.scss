@@ -16,6 +16,7 @@
 
 	--sp-base: #{rem(20)};
 	--red: #{$primary};
+	--gr2: #a1a1a1;
 	//  --carousel-button-width: 48px;
 	//  --carousel-button-height: 48px;
 
@@ -26,16 +27,19 @@
 	//  --carousel-button-svg-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0/ 0.4));
 	@include media-breakpoint-up(sm) {
 		--sp-base: #{rem(40)};
+		--sPT: #{rem(80)};
+		--sTPB: #{rem(80)};
+		--sPB: #{rem(80)};
 	}
+	--sPT: #{rem(60)};
+	--sTPB: #{rem(30)};
+	--sPB: #{rem(60)};
 	@include media-breakpoint-up(xl) {
 		// --bs-body-font-size: 20px;
 	}
 	@include media-breakpoint-up(xxl) {
 		--bs-body-font-size: #{$em-base};
 	}
-	--sPT: #{rem(80)};
-	--sTPB: #{rem(80)};
-	--sPB: #{rem(80)};
 }
 .fancybox__container {
 	--fancybox-bg: rgba(58, 59, 60, 0.77);

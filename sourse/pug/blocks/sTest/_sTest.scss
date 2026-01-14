@@ -1,0 +1,49 @@
+// start .sTest
+.sTest {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	border-radius: calc(1vw + 30px);
+	box-shadow: 0 4px 163px 0 rgba(53, 74, 157, 0.1);
+	background: linear-gradient(180deg, #f8f9ff 0%, #fff 44.71%, #eef1ff 100%);
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+		h2 {
+			max-width: 600px;
+		}
+	}
+	&__col {
+	}
+	&__item {
+	}
+
+	ul {
+		padding-left: 20px;
+		font-size: 20px;
+	}
+	&__max {
+		max-width: 1070px;
+	}
+
+	.sArbitr__block {
+		background-image:
+			url(../img/bg-2.svg), linear-gradient(134deg, #1c40d0, #7300ff);
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sTest

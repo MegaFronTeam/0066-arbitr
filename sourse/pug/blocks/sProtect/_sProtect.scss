@@ -1,0 +1,53 @@
+// start .sProtect
+.sProtect {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+		box-shadow: 0 60px 113px 0 rgba(240, 243, 255, 0.89);
+		height: 100%;
+		padding: rem(40);
+		border-radius: 16px;
+		position: relative;
+		z-index: 2;
+		background: linear-gradient(to right, #a0b3ff, #fff, #4066ff);
+		&::before {
+			content: "";
+			inset: 1px;
+			position: absolute;
+			border-radius: inherit;
+			background: linear-gradient(134deg, #fff 0%, #f6f8ff 100%);
+			z-index: -1;
+		}
+	}
+
+	.sView__line {
+		&::before {
+			display: none;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sProtect

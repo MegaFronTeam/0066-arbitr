@@ -1,28 +1,88 @@
 // start .sArbitr
 .sArbitr {
+	border-radius: calc(1vw + 30px);
+	box-shadow: 0 4px 163px 0 rgba(53, 74, 157, 0.1);
+	background: linear-gradient(180deg, #f8f9ff 0%, #fff 44.71%, #eef1ff 100%);
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
-	
-	&__row{
+
+	&__row {
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
 	}
-	.section-title{
-		
+	.section-title {
 	}
-	&__col{
-		
+	&__col {
 	}
-	&__item{
-		
+	counter-reset: num;
+	&__item {
+		border-bottom: 1px solid $secondary;
+		padding-block: rem(24);
+		display: flex;
+		gap: 24px;
+		position: relative;
+		font-size: rem(20);
+		flex-wrap: wrap;
+		&::before {
+			content: "0" counter(num);
+			counter-increment: num;
+			font-family: "Akrobat", sans-serif;
+			color: $primary;
+			font-weight: bold;
+			@include rfs(25px);
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+		&:nth-child(n + 10) {
+			&::before {
+				content: counter(num);
+			}
+		}
 	}
 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-between(md, xl) {}
-	@include media-breakpoint-only(xl) {}
-	@include media-breakpoint-down(xl) {}
+	&__title {
+		@include rfs(25px);
+		font-weight: bold;
+		font-family: "Akrobat", sans-serif;
+		text-transform: uppercase;
+	}
+
+	&__block {
+		box-shadow: 0 60px 113px 0 rgba(240, 243, 255, 0.89);
+		border-radius: 16px;
+		color: #fff;
+		padding: rem(40);
+		margin-top: var(--sPT);
+		background-image:
+			url(../img/graf-bg.svg), linear-gradient(134deg, #1c40d0 0%, #7300ff 100%);
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+		.h3 {
+			max-width: 890px;
+		}
+		.btn {
+			text-transform: uppercase;
+			color: $primary;
+			font-family: "Akrobat", sans-serif;
+			font-weight: 800;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
 } // end.sArbitr
