@@ -33,6 +33,10 @@ include ../blocks/sManagment/_sManagment.pug
 include ../blocks/sAuthor/_sAuthor.pug
 include ../blocks/sSet/_sSet.pug
 include ../blocks/sForWho/_sForWho.pug
+include ../blocks/sFabric/_sFabric.pug
+include ../blocks/sGetAdv/_sGetAdv.pug
+
+
 
 //- include ../blocks/sTasks/_sTasks.pug
 //- include ../blocks/sTitan/_sTitan.pug
@@ -73,6 +77,7 @@ block pagecontent
 		+sAuthor
 		+sSet
 		+sForWho
+		+sFabric().section-light
 		//- +sMyName
 		//- +sKnowBefore
 		//- +sStudy
@@ -83,8 +88,6 @@ block pagecontent
 		//- +sAuthor
 		//- +sProgram
 		//- +sNoticeYourself
-		+sWhy
 		+sQA
-		+sYouReady
-		+sRew
+		+sGetAdv().section-light
 	+footer

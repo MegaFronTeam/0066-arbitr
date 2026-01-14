@@ -1,0 +1,122 @@
+// start .sFabric
+.sFabric {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+
+	li {
+		font-size: 20px;
+		margin-bottom: 24px;
+		padding-left: 70px;
+		list-style: none;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 10px;
+			height: 3px;
+			width: 40px;
+			background-color: var(--red);
+		}
+	}
+	ul {
+		padding: 0;
+	}
+
+	.form-control {
+		text-align: left;
+		border-radius: rem(40);
+		padding-top: 68px;
+		font-size: 35px;
+		font-weight: 600;
+		border-color: $primary;
+		border-radius: 4px;
+		text-transform: uppercase;
+		font-family: Akrobat, sans-serif;
+		text-transform: uppercase;
+		border-top-width: 3px;
+	}
+
+	.form-group {
+		text-align: left;
+		position: relative;
+		.input-label {
+			position: absolute;
+			top: 28px;
+			padding-left: 20px;
+			font-size: 24px;
+			text-transform: uppercase;
+			font-family: Akrobat, sans-serif;
+			font-weight: bold;
+			letter-spacing: -0.04em;
+		}
+	}
+
+	&__line {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 2px;
+		margin-bottom: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1000px;
+	}
+	&__label {
+		border: 1px solid;
+		border-radius: 100px;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 60px;
+		height: 60px;
+		font-weight: 700;
+		font-size: 25px;
+		letter-spacing: -0.04em;
+		text-transform: uppercase;
+		padding-left: 24px;
+		padding-right: 24px;
+		font-family: "Akrobat", sans-serif;
+		&--arrow {
+			color: $primary;
+			padding: 0;
+			font-weight: normal;
+			&:last-child {
+				transform: rotate(90deg);
+			}
+		}
+	}
+
+	.h2 {
+		@include media-breakpoint-up(xxl) {
+			font-size: 120px;
+		}
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sFabric

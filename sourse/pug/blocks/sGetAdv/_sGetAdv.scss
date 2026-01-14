@@ -1,0 +1,53 @@
+// start .sGetAdv
+.sGetAdv {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+		&:nth-child(1) {
+			color: #da4049;
+			.sProtect__item {
+				background: #da4049;
+			}
+		}
+	}
+	&__item {
+	}
+
+	.sArbitr__item {
+		&::before {
+			display: none;
+		}
+		border-bottom: none;
+		border-top: 1px solid $primary;
+	}
+
+	.sArbitr__title {
+		font-family: "PT Serif";
+		font-style: italic;
+		font-size: 24px;
+		text-transform: none;
+		color: $primary;
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sGetAdv
